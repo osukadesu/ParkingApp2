@@ -1,0 +1,28 @@
+<title>CONSULTAR VEHICULOS</title>
+<br><br>
+<div align="center"><img src="../../../../assets/ConsultarV.png" alt="Logo"><br>
+    <h1>Consultar Vehiculos</h1>
+</div><br>
+
+<form class="form-inline" class="container" id="Buscador">
+    <input class="form-control mr-sm-2" name="filtroVehiculo" [(ngModel)]="searchText" type="text" placeholder="Buscar por id_vehiculo" aria-label="Search">
+</form><br><br>
+
+<!--<button id="divcontainer2" type="button" class="btn btn-primary">Consultar</button>-->
+<div class="table-responsive" id="rcorners1">
+    <table class="table table-bordered" id="myTable" >
+        <thead>
+            <tr class="thead-dark">
+                <th (click)="sortTable(0)" scope="col">#</th>
+                <th (click)="sortTable(1)"> <i class="fas fa-paper-plane"></i>__Id vehiculo</th>
+                <th (click)="sortTable(1)"><i class="bi bi-person-lines-fill"></i>__Cedula de cliente</th>
+                <th (click)="sortTable(2)"><i class="fas fa-edit"></i>__Marca</th>
+                <th (click)="sortTable(5)"> <i class="far fa-paper-plane"></i>__ Tipo de vehiculo</th>
+                <th (click)="sortTable(6)"> <i class="fas fa-palette"></i>__Color</th>
+                <!-- <th (click)="sortTable(12)">Modificar/Eliminar</th> -->
+            </tr>
+        </thead>
+       
+    </table>
+</div>
+<br>

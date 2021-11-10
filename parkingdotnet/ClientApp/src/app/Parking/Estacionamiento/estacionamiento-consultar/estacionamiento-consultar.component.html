@@ -1,0 +1,27 @@
+<title>CONSULTAR ESTACIONAMIENTO</title>
+<br><br>
+<div align="center"><img src="../../../../assets/ConsultarV.png" alt="Logo"><br>
+    <h1>Consultar Estacionamiento</h1>
+</div><br>
+
+<form class="form-inline" class="container" id="Buscador">
+    <input class="form-control mr-sm-2" name="filtroEstacionamiento" [(ngModel)]="searchText" type="text" placeholder="Buscar por id_estacionamiento" aria-label="Search">
+</form><br><br>
+
+<!--<button id="divcontainer2" type="button" class="btn btn-primary">Consultar</button>-->
+<div class="table-responsive" id="rcorners1">
+    <table class="table table-bordered" id="myTable" >
+        <thead>
+            <tr class="thead-dark">
+                <th (click)="sortTable(0)" scope="col">#</th>
+                <th (click)="sortTable(1)"> <i class="fas fa-map-marked-alt"></i>__Id estacionamiento</th>
+                <th (click)="sortTable(5)"> <i class="far fa-paper-plane"></i>__Tipo de estacionamiento</th>
+                <th (click)="sortTable(2)"><i class="bi bi-123"></i>__Numero de cupo</th>
+                <th (click)="sortTable(6)"> <i class="fas fa-unlock"></i>__Estado</th>
+                <!-- <th (click)="sortTable(12)">Modificar/Eliminar</th> -->
+            </tr>
+        </thead>
+       
+    </table>
+</div>
+<br>

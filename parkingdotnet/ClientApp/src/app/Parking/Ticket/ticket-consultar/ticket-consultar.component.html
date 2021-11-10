@@ -1,0 +1,29 @@
+<title>CONSULTAR TICKET</title>
+<br><br>
+<div align="center"><img src="../../../../assets/ConsultarV.png" alt="Logo"><br>
+    <h1>Consultar Ticket</h1>
+</div><br>
+
+<form class="form-inline" class="container" id="Buscador">
+    <input class="form-control mr-sm-2" name="filtroEstacionamiento" [(ngModel)]="searchText" type="text" placeholder="Buscar por id_estacionamiento" aria-label="Search">
+</form><br><br>
+
+<!--<button id="divcontainer2" type="button" class="btn btn-primary">Consultar</button>-->
+<div class="table-responsive" id="rcorners1">
+    <table class="table table-bordered" id="myTable" >
+        <thead>
+            <tr class="thead-dark">
+                <th (click)="sortTable(0)" scope="col">#</th>
+                <th (click)="sortTable(1)"> <i class="fas fa-money-check-alt"></i>__Id ticket</th>
+                <th (click)="sortTable(5)"> <i class="bi bi-calendar-fill"></i>__<label></label>Fecha de elaboración</th>
+                <th (click)="sortTable(6)"><i class="bi bi-calendar-fill"></i>__<label></label>Fecha de salida</th>
+                <th (click)="sortTable(6)"><i class="bi bi-calculator"></i>__Subtotal</th>
+                <th (click)="sortTable(6)"> <i class="bi bi-percent"></i>__Iva</th>
+                <th (click)="sortTable(6)"><i class="bi bi-calculator-fill"></i>__Total</th>
+                <!-- <th (click)="sortTable(12)">Modificar/Eliminar</th> -->
+            </tr>
+        </thead>
+       
+    </table>
+</div>
+<br>

@@ -1,0 +1,65 @@
+<title>REGISTRO VEHICULO</title>
+<br><br>
+<div align="center"><img src="assets/logo.png" alt="Logo">
+    <h1>Registrar Vehiculo</h1>
+</div><br>
+<div id="divcontainer" class="forms">
+    <form>
+        <div class="form-group">
+            <i class="fas fa-paper-plane"></i>__<label>Id Vehiculo</label>
+            <input id=idvehiculo name="idvehiculo" type="text" placeholder="Id vehiculo">
+        </div>
+
+        <div>
+            <i class="bi bi-person-lines-fill"></i>__<label>Cedula Cliente</label>
+            <select id="cedula" name="cedula">
+                <option value="seleccionar">Seleccionar Cliente</option>
+                <option value="cedula">123456789</option>
+                <option value="cedula">987654321</option>
+                <option value="cedula">789123456</option>
+            </select>
+
+        </div>
+
+        <div>
+            <i class="fas fa-edit"></i>__<label>Marca</label>
+            <input type="text" id="marca" name="marca" placeholder="marca">
+
+        </div>
+
+        <div>
+            <i class="far fa-paper-plane"></i>__ <label>Tipo de Vehiculo</label>
+            <select id="tipovehiculo" name="tipovehiculo">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="bicicleta">Bicicleta</option>
+            </select>
+
+        </div>
+
+        <div>
+            <i class="fas fa-palette"></i>__<label>Color</label><br>
+            <select id="color" name="color" >
+                <option value="seleccionar">Seleccionar</option>
+                <option value="rojo" style="background-color: red;">Rojo</option>
+                <option value="negro" style="background-color: black;color: white;">Negro</option>
+                <option value="verde" style="background-color: green;">Verde</option>
+                <option value="amarillo" style="background-color: yellow;">Amarillo</option>
+                <option value="azul" style="background-color: blue; color: white;">Azul</option>
+                <option value="blanco" style="background-color: white;">Blanco</option>
+                <option value="gris" style="background-color: gray;">Gris</option>
+                <option value="naranja" style="background-color: orange;">Naranja</option>
+                <option value="morado" style="background-color: purple;">Morado</option>
+            </select>
+        </div>
+
+        <br>
+        <button id="divcontainer2" class="btn">
+            <span>
+                <a href="https://localhost:5001/clienteregistro"></a>
+            </span>
+            Guardar</button>
+    </form>
+</div>
+<br>

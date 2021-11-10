@@ -1,0 +1,48 @@
+<title>REGISTRO ESTACIONAMIENTO</title>
+<br><br>
+<div align="center"><img src="../../../../assets/parking.png" alt="Logo">
+    <h1>Registrar Estacionamiento</h1>
+</div><br>
+<div id="divcontainer" class="forms">
+    <form>
+        <div class="form-group">
+            <i class="fas fa-map-marked-alt"></i>__<label>Id Estacionamiento</label>
+            <input id=idestacionamiento name="idestacionamiento" type="text" placeholder="Id estacionamiento">
+        </div>
+
+        <div>
+            <i class="far fa-paper-plane"></i>__<label>Tipo de estacionamiento</label>
+            <select id="tipoestacionamiento" name="tipoestacionamiento">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="bicicleta">Bicicleta</option>
+            </select>
+
+        </div>
+
+        <div>
+            <i class="bi bi-123"></i>__<label>Numero de cupo</label>
+            <input type="number" id="ncupo" name="ncupo" placeholder="Numero de cupo">
+
+        </div>
+
+        <div>
+            <i class="fas fa-unlock"></i>__<label>Estado</label>
+            <select id="estado" name="estado">
+                <option value="seleccionar" disabled >Seleccionar</option>
+                <option value="disponible" selected>Disponible</option>
+                <option value="ocupado"  disabled >Ocupado</option>
+            </select>
+
+        </div>
+
+        <br>
+        <button id="divcontainer2" class="btn">
+            <span>
+                <a href="https://localhost:5001/clienteregistro"></a>
+            </span>
+            Guardar</button>
+    </form>
+</div>
+<br>

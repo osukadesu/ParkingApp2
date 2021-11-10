@@ -1,0 +1,48 @@
+<title>REGISTRO TICKET</title>
+<br><br>
+<div align="center"><img src="assets/ticket.png" alt="Logo">
+    <h1>Registrar Ticket</h1>
+</div><br>
+<div id="divcontainer" class="forms">
+    <form>
+        <div class="form-group">
+            <i class="fas fa-money-check-alt"></i>__<label>Id Ticket</label>
+            <input id=idticket name="idticket" type="text" placeholder="Id ticekt">
+        </div>
+
+        <div>
+            <i class="bi bi-calendar-fill"></i>__<label>Fecha de elaboración:</label>
+            <input type="date" id="fechaentrada" name="Fecha de elaboración">
+        </div>
+
+        <div>
+            <i class="bi bi-calendar-fill"></i>__<label>Fecha de salida:</label>
+            <input type="date" id="fechasalida" name="Fecha de salida">
+        </div>
+
+        <div>
+            <i class="bi bi-calculator"></i>__<label>Subtotal</label><br>
+            <input type="number" id="subtotal" name="subtotal" placeholder="subtotal">
+
+        </div>
+
+        <div>
+            <i class="bi bi-percent"></i>__<label>Iva</label><br>
+            <input type="number" id="iva" name="iva" value="16" disabled>
+        </div>
+       
+        <div>
+            <i class="bi bi-calculator-fill"></i>__<label>Total</label><br>
+            <input type="number" id="total" name="total" disabled value="0">
+
+        </div>
+
+        <br>
+        <button id="divcontainer2" class="btn">
+            <span>
+                <a href="#"></a>
+            </span>
+            Guardar</button>
+    </form>
+</div>
+<br>
